@@ -1,7 +1,7 @@
 import torch
 from bigfile import BigFile
 
-from .encoder import Text2W2VEncoder, Text2BoWEncoder
+from encoder import Text2W2VEncoder, Text2BoWEncoder
 
 
 class VisionDataset(torch.utils.data.Dataset):

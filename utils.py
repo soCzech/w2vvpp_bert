@@ -23,6 +23,7 @@ def get_label_matrix(vis_emb, vis_ids, txt_emb, txt_ids):
     for index in range(inds.shape[0]):
         ind = inds[index][::-1]
         label_matrix[index][np.where(np.array(vis_ids)[ind] == txt_ids[index].split('#')[0])[0]] = 1
+    return label_matrix
 
 
 def compute_metrics(label_matrix):
